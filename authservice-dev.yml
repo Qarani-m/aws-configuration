@@ -1,3 +1,42 @@
-DEV_DATASOURCE_USERNAME: root
-DEV_DATASOURCE_PASSWORD: root
-DEV_DATASOURCE_URL: jdbc:postgresql://localhost:5432
+spring:
+  profiles: dev
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432
+    username: root
+    password: root
+
+mail:
+  host: smtp.gmail.com
+  port: 587
+  username: emqarani@gmail.com
+  password: "cbhs oyci khfa psij"
+
+nats:
+  url: nats://localhost:4222
+  username: auth-server
+  password: auth-secret
+
+eureka:
+  instance:
+    hostname: localhost
+    scheme: http
+
+jwt:
+  secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+  expiration: 86400000
+
+services:
+  ports:
+    auth: 8081
+    api-gateway: 8080
+    iam: 8081
+    lambda: 8082
+    s3: 8083
+    rds: 8084
+    ec2: 8085
+    fargate: 8086
+    gamelift: 8087
+
+frontend:
+  url: http://localhost:5173
