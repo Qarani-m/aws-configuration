@@ -1,6 +1,6 @@
 # Database
 DEV_DATASOURCE_USERNAME: root
-DEV_DATASOURCE_PASSWORD: root
+DEV_DATASOURCE_PASSWORD: rootO
 DEV_DATASOURCE_URL: jdbc:postgresql://localhost:5432
 
 # Mail
